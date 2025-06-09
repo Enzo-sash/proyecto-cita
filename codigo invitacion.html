@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Invitación Especial</title>
+  <link rel="stylesheet" href="codigo.css" />
+</head>
+<body>
+
+  
+  <div class="container">
+    <div class="card">
+    
+
+<!-- Audio oculto -->
+<audio id="audio" src="musica/Bruno Mars - Just The Way You Are (Official Music Video).mp3"></audio>
+
+<!-- Formulario que aparece al aceptar -->
+
+   <h1>¿xxxxxxxxxxxxxxxx? 😍</h1>
+<form id="extraForm">
+  <h2>¡Genial! Cuéntame un poco más</h2>
+
+  <label for="date">¿Qué día te gustaría?</label>
+  <input type="date" id="date" name="date" required />
+
+  <label for="place">¿Dónde prefieres que sea?</label>
+  <input type="text" id="place" name="place" placeholder="Lugar favorito" required />
+
+  <label for="comments">¿Algo más que quieras decir?</label>
+  <textarea id="comments" name="comments" rows="3" placeholder="Escribe aquí..."></textarea>
+
+  <button type="submit">Enviar</button>
+</form>
+   
+
+      <div class="btn-container">
+        <button id="yesBtn">Sí </button>
+        <button id="noBtn">No </button>
+      </div>
+    </div>
+  </div>
+  <script src="codigo.js"></script>
+</body>
+</html>
