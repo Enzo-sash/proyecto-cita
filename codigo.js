@@ -1,6 +1,8 @@
 const noBtn = document.getElementById('noBtn');
 const yesBtn = document.getElementById('yesBtn');
 const container = document.querySelector('.btn-container');
+
+
 const audio = document.getElementById('audio');
 const form = document.getElementById('extraForm');
 const card = document.querySelector('.card');
@@ -51,6 +53,12 @@ form.addEventListener('submit', (e) => {
   const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   window.open(whatsappURL, '_blank');
+  alert('¡Gracias por responder! 😍');
 
+   // Regresar al inicio (reiniciar la vista)
+  form.style.display = 'none';
+  container.style.display = 'flex'; // Mostrar de nuevo los botones
+    form.reset();
 });
 
+  
