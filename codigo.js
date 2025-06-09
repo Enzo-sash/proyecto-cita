@@ -30,7 +30,7 @@ yesBtn.addEventListener('click', () => {
     yesBtn.classList.remove('bounce');
   }, 600);
 
-  alert('Sabía que ibas a aceptar, no te arrepentirás.');
+  alert('Sabía que ibas a aceptar, no te arrepentirás 👌😁.');
 
   form.style.display = 'block';        // Mostrar formulario
   container.style.display = 'none';    // Ocultar botones
@@ -46,7 +46,7 @@ form.addEventListener('submit', (e) => {
 
   const message = `¡Hola! 😊\n\nCITA ACEPTADA! 😍 .  MIS RESPUESTAS :\n📅 Fecha: ${date}\n📍 Lugar: ${place}\n💬 Comentario: ${comments}`;
 
-  const phoneNumber = '51995204159'; // <-- Reemplaza con TU número de WhatsApp
+  const phoneNumber = '51995204159'; 
 
   const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 

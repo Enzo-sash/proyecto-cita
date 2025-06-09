@@ -8,18 +8,21 @@ body, html {
   height: 100%;
   width: 100%;
   font-family: 'Segoe UI', sans-serif;
+  
 }
+
+
 
 .container {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #fce4ec;
+  background: #0a3b64;
+ background-image: url(../imagenes/descarga.jpg);
 }
 
 .card {
-background-image: url(imagenes/descarga.jpg);
   background-size: cover;
   background-position: center;
   border-radius: 15px;
@@ -59,7 +62,7 @@ button {
 }
 
 #yesBtn {
-  background-color: #66bb6a;
+  background-color: #3db943;
   color: white;
   left: 30px;
   bottom: 20px;
