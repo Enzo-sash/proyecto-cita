@@ -34,6 +34,9 @@ yesBtn.addEventListener('click', () => {
 
   alert('Sabía que ibas a aceptar, no te arrepentirás 👌😁.');
 
+  // Ocultar el título de la pregunta
+  document.getElementById('question').style.display = 'none';
+
   form.style.display = 'block';        // Mostrar formulario
   container.style.display = 'none';    // Ocultar botones
 });
