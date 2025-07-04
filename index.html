@@ -5,44 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Invitación Especial 2025</title>
   <link rel="stylesheet" href="codigo.css" />
+  <style>
+    #extraForm { display: none; }
+    .btn-container { position: relative; height: 100px; }
+    #noBtn { position: absolute; }
+  </style>
 </head>
 <body>
 
-  
-  <div 02lass="container">
+  <div class="container">
     <div class="card">
-    
 
-<!-- Audio oculto -->
-<audio src="musica/wwd.mp3juice.blog - Jay Wheeler - Dime Que Si (Cover Audio) (192 KBps).mp3"></audio>
+      <!-- Audio con ID -->
+      <audio id="audio" src="musica/wwd.mp3juice.blog - Jay Wheeler - Dime Que Si (Cover Audio) (192 KBps).mp3"></audio>
 
-<!-- Formulario que aparece al aceptar -->
+      <h1 id="question">¿Te gustaría tener una cita conmigo? 😍</h1>
 
-   <h1 id="question">¿ te gustaría tener una cita conmigo? 😍</h1>
-<form id="extraForm">
-  <h2>¡Genial! Cuéntame un poco más</h2>
+      <!-- Formulario oculto -->
+      <form id="extraForm">
+        <h2>¡Genial! Cuéntame un poco más</h2>
+        <label for="date">¿Qué día te gustaría?</label>
+        <input type="date" id="date" name="date" required />
 
-  <label for="date">¿Qué día te gustaría?</label>
-  <input type="date" id="date" name="date" required />
+        <label for="place">¿Dónde prefieres que sea?</label>
+        <input type="text" id="place" name="place" placeholder="Lugar favorito" required />
 
-  <label for="place">¿Dónde prefieres que sea?</label>
-  <input type="text" id="place" name="place" placeholder="Lugar favorito" required />
+        <label for="comments">¿Algo más que quieras decir?</label>
+        <textarea id="comments" name="comments" rows="3" placeholder="Escribe aquí..."></textarea>
 
-  <label for="comments">¿Algo más que quieras decir?</label>
-  <textarea id="comments" name="comments" rows="3" placeholder="Escribe aquí..."></textarea>
-
- 
-  <button type="submit">Enviar</button>
-  <p><center><br>IAM SASH</center></p>
-</form>
-   
+        <button type="submit">Enviar</button>
+        <p><center><br>IAM SASH</center></p>
+      </form>
 
       <div class="btn-container">
-        <button id="yesBtn">Sí </button>
-        <button id="noBtn">No </button>
+        <button id="yesBtn">Sí</button>
+        <button id="noBtn">No</button>
       </div>
+
     </div>
   </div>
+
   <script src="codigo.js"></script>
 </body>
 </html>
+
